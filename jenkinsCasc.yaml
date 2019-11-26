@@ -62,7 +62,7 @@ data:
     unclassified:
       location:
         adminAddress: "address not configured yet <nobody@nowhere>"
-        url: "https://cjd.cloudbees.elgin.io/"
+        url: "https://cjd-casc.pcherry.uk/"
       simple-theme-plugin:
         elements:
         - cssUrl:
