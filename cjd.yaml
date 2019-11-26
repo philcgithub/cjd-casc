@@ -76,10 +76,10 @@ metadata:
 spec:
   tls: # cert-manager
   - hosts: # cert-manager
-    - cjd.cloudbees.elgin.io # cert-manager
+    - cjd-casc.pcherry.uk # cert-manager
     secretName: cjd-tls # cert-manager
   rules:
-  - host: cjd.cloudbees.elgin.io
+  - host: cjd-casc.pcherry.uk
     http:
       paths:
       - path: /
