@@ -49,7 +49,7 @@ data:
             github {
               id('cjd-casc')
               scanCredentialsId('github')
-              repoOwner('cb-technologists')
+              repoOwner('philcgithub')
               repository('cjd-casc')
             }
           }
