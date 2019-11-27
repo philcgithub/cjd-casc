@@ -19,7 +19,7 @@ pipeline {
         }
         container(name: 'kaniko', shell: '/busybox/sh') {
           sh """#!/busybox/sh
-                /kaniko/executor --context `pwd` --destination gcr.io/melgin/cjd-casc:${env.COMMIT_ID} --cache=true
+                /kaniko/executor --context `pwd` --destination gcr.io/pcherry-cjd-casc/cjd-casc:${env.COMMIT_ID} --cache=true
           """
         }
       }
@@ -40,7 +40,7 @@ pipeline {
           sh """
             kubectl apply -f jenkinsCasc.yaml
             kubectl apply -f cjd.yaml
-            kubectl set image statefulset cjd cjd=gcr.io/melgin/cjd-casc:${env.COMMIT_ID}
+            kubectl set image statefulset cjd cjd=gcr.io/pcherry-cjd-casc/cjd-casc:${env.COMMIT_ID}
           """
         }
       }
